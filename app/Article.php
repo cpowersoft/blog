@@ -157,5 +157,6 @@ class Article extends Model
         ];
 
         $this->attributes['content'] = json_encode($data);
+
     }
 }
