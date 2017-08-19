@@ -13,8 +13,8 @@ return [
 
     // Meta
     'meta' => [
-        'keywords' => 'PJ Blog,blog,pigjian,laravel,vuejs',
-        'description' => 'Nothing is impossible in PJ Blog'
+        'keywords' => 'Blog,blog,laravel,vuejs',
+        'description' => 'Nothing is impossible in Blog'
     ],
 
     // Social Share
