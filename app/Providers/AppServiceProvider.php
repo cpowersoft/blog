@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Article;
 use App\Discussion;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use App\Tools\FileManager\BaseManager;
 use App\Tools\FileManager\UpyunManager;
@@ -25,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
             'discussions' => Discussion::class,
             'articles'    => Article::class,
         ]);
+        Schema::defaultStringLength(191);
     }
 
     /**
