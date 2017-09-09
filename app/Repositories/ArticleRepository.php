@@ -60,7 +60,7 @@ class ArticleRepository
         return $this->save($this->model, $input);
     }
 
-    /**
+    /**d
      * Get the article by article's slug.
      * The Admin can preview the article if the article is drafted.
      *

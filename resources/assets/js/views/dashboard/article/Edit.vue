@@ -22,7 +22,7 @@ export default {
     created() {
         this.$http.get('article/' + this.$route.params.id + '/edit?include=category,tags')
             .then((response) => {
-                this.article = response.data.data
+                this.article = response.data.data;
             })
     },
 }
