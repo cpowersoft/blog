@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use Cache;
 use Illuminate\Http\Request;
 use App\Repositories\ArticleRepository;
 
@@ -22,7 +23,9 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        \Cache::put('test_patpat','nick');
+        Cache::put('test_patpat','nick');
+        Cache::put('test','ok');
+        echo Cache::get('test');
         return view('dashboard.index');
     }
 
