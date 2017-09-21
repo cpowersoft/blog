@@ -22,16 +22,6 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        /*Redis::set('api:name', 'Nick456788');
-
-        $name = Redis::get('name');
-        dd($name);*/
-        dd(Cache::class);
-
-        \Cache::put('name','Nick123');
-        $name = \Cache::get('name');
-        dd($name);
-
         return view('dashboard.index');
     }
 
