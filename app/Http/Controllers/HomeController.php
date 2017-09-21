@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
 use Cache;
 use Illuminate\Http\Request;
 use App\Repositories\ArticleRepository;
@@ -26,7 +25,7 @@ class HomeController extends Controller
         Cache::put('test_patpat','nick');
         Cache::put('test','ok');
         $test = Cache::get('test');
-        dd(Cache);
+        dd(Cache::class);
         return view('dashboard.index');
     }
 
