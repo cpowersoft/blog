@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Cache;
 use Illuminate\Http\Request;
 use App\Repositories\ArticleRepository;
+use Redis;
 
 class HomeController extends Controller
 {
@@ -22,9 +22,9 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        \Redis::connection();
-        \Redis::set('name', 'Taylor');
-        $name = \Redis::get('name');
+        Redis::connection();
+        Redis::set('name', 'Nick');
+        $name = Redis::get('name');
         dd($name);
 
         return view('dashboard.index');
