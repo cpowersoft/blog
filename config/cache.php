@@ -68,21 +68,12 @@ return [
             ],
         ],
 
-        /*'redis' => [
-            'driver' => 'redis',
-            'connection' => 'default',
-        ],*/
-
         'redis' => [
             'driver' => 'redis',
-            'servers' => [
-                [
-                    'host' => env('REDIS_HOST', '127.0.0.1'),
-                    'port' => env('REDIS_PORT', 6379),
-                    'weight' => 100,
-                ],
-            ],
+            'connection' => 'default',
         ],
+
+
     ],
 
     /*
