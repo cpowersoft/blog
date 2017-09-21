@@ -22,11 +22,9 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        Redis::connection();
-        Redis::set('name', 'Nick');
-        Redis::increment('aaaa');
+        Redis::set('name', 'Nick4567');
 
-        $name = Redis::get('aaaa');
+        $name = Redis::get('name');
         dd($name);
 
         \Cache::put('name','Nick123');
