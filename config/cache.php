@@ -72,7 +72,16 @@ return [
             'driver' => 'redis',
             'connection' => 'default',
         ],
-
+        'elasticache' => [
+            'driver' => 'redis',
+            'servers' => [
+                [
+                    'host' => env('REDIS_HOST', '127.0.0.1'),
+                    'port' => env('REDIS_PASSWORD', null),
+                    'weight' => ''
+                ]
+            ]
+        ],
     ],
 
     /*

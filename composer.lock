@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "34296a6835fd14961d150ed23fc3182a",
+    "content-hash": "35d3aa823525c116ee9bdefac3035aa1",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -127,6 +127,52 @@
                 }
             ],
             "time": "2016-06-13T19:28:20+00:00"
+        },
+        {
+            "name": "db1-fpp/laravel-elasticache",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FPP-DB1/laravel-elasticache.git",
+                "reference": "82438a2ed02846f90326517368c0412d32780e7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FPP-DB1/laravel-elasticache/zipball/82438a2ed02846f90326517368c0412d32780e7e",
+                "reference": "82438a2ed02846f90326517368c0412d32780e7e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^5.2.0",
+                "illuminate/contracts": "^5.2.0",
+                "illuminate/session": "^5.2.0",
+                "illuminate/support": "^5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Db1Fpp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "DB1 Global Software",
+                    "email": "rafael.labegalini@db1.com.br"
+                }
+            ],
+            "description": "Add new cache and session driver to use AWS ElastiCache with auto discovery",
+            "keywords": [
+                "Elasticache",
+                "amazon",
+                "aws",
+                "cache",
+                "laravel"
+            ],
+            "time": "2017-02-03T12:04:20+00:00"
         },
         {
             "name": "defuse/php-encryption",
