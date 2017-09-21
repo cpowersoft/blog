@@ -22,7 +22,7 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        Redis::set('api:name', 'Nick4567');
+        Redis::set('api:name', 'Nick456788');
 
 
 
