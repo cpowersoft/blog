@@ -26,6 +26,7 @@ class HomeController extends Controller
 
         $name = Redis::get('name');
         dd($name);*/
+        dd(app(Cache::class));
 
         \Cache::put('name','Nick123');
         $name = \Cache::get('name');
