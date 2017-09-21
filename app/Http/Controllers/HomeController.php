@@ -26,7 +26,7 @@ class HomeController extends Controller
         Cache::put('test_patpat','nick');
         Cache::put('test','ok');
         $test = Cache::get('test');
-        dd($test);
+        dd(Cache);
         return view('dashboard.index');
     }
 
