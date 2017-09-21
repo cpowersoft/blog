@@ -22,6 +22,7 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
+        \Cache::put('test_patpat','nick');
         return view('dashboard.index');
     }
 

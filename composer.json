@@ -19,6 +19,7 @@
         "league/fractal": "^0.14.0",
         "league/html-to-markdown": "^4.2",
         "predis/predis": "^1.1",
+        "barryvdh/laravel-ide-helper": "^2.4",
         "yzalis/identicon": "^1.1"
     },
     "require-dev": {
@@ -55,7 +56,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan ide-helper:generate"
         ]
     },
     "config": {
