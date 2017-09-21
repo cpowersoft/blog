@@ -72,8 +72,6 @@ return [
             'driver' => 'redis',
             'connection' => 'default',
         ],
-
-
     ],
 
     /*
