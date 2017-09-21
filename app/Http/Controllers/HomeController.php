@@ -26,10 +26,9 @@ class HomeController extends Controller
 
         $name = Redis::get('name');
         dd($name);*/
-        Cache::store('elasticache')->set('name','Nick123');
-        $name = Cache::store('elasticache')->get('name');
-        //\Cache::put('name','Nick123');
-        //$name = \Cache::get('name');
+
+        \Cache::put('name','Nick123');
+        $name = \Cache::get('name');
         dd($name);
 
         return view('dashboard.index');
