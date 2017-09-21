@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Cache;
 use Illuminate\Http\Request;
 use App\Repositories\ArticleRepository;
 
@@ -25,9 +26,10 @@ class HomeController extends Controller
 
         $name = Redis::get('name');
         dd($name);*/
-
-        \Cache::put('name','Nick123');
-        $name = \Cache::get('name');
+        Cache::store('elasticache')->set('name','Nick123');
+        $name = Cache::store('elasticache')->get('name');
+        //\Cache::put('name','Nick123');
+        //$name = \Cache::get('name');
         dd($name);
 
         return view('dashboard.index');

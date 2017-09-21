@@ -92,7 +92,7 @@ return [
     |
     */
 
-    /*'redis' => [
+    'redis' => [
 
         'client' => 'predis',
         'cluster' => true,
@@ -102,22 +102,7 @@ return [
             'port' => env('REDIS_PORT', 6379),
             'database' => 0,
         ],
-    ],*/
-    'redis' => [
-        'client' => 'predis',
-        'options' => [
-            'cluster' => 'redis',
-        ],
-        'clusters' => [
-            'default' => [
-                [
-                    'host' => env('REDIS_HOST', 'localhost'),
-                    'password' => env('REDIS_PASSWORD', null),
-                    'port' => env('REDIS_PORT', 6379),
-                    'database' => 0,
-                ],
-            ],
-        ],
+
     ],
 
 ];
